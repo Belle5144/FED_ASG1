@@ -1,3 +1,4 @@
+/*header*/
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
 * {
@@ -68,6 +69,8 @@ input::placeholder {
    padding: 10px; color: #C1958C; 
    border-width: 0;
 }
+
+/*Background image and title*/
 .Background_img{
   width: 100%; 
   height: 100vh; 
@@ -86,9 +89,14 @@ input::placeholder {
   margin: 0; 
   font-size: 30px;
 }
+
+/*featured products*/
 .Product1{
   display: flex; 
   justify-content: space-around;
+}
+.Product1 h4{
+   text-align: center;
 }
 .square-box {
   width: 200px;           
@@ -104,10 +112,66 @@ input::placeholder {
   object-fit: cover;      
 }
 
+/*Upcoming products*/
+.Release-alert{
+  margin-left: 20px;
+}
 
+.Product{
+  display: flex; 
+  align-items: flex-start; 
+  gap: 10px;
+}
 
+.Img{
+  width: 250px; 
+  height:250px; 
+  margin-left:15px
+}
 
+.Title{
+  margin-top: 50px; 
+  font-size: 20px;
+}
 
+.Points{
+  margin-bottom: 10px;
+}
 
+/*footer*/
+#footer{
+  background-color: #5E3E1A; 
+  color: white
+}
 
- 
+#footer1{
+  display: flex; 
+  flex-wrap: nowrap; 
+  justify-content: space-evenly;
+  margin-top: 20px
+}
+
+#footer-info1{
+  display: flex; 
+  flex-wrap: nowrap; 
+  justify-content: space-evenly;
+  margin-top: 20px
+}
+
+#part1{
+  display: flex; 
+  flex-direction: column
+}
+
+.part1-icon{
+  display: inline-flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 50px; 
+  height: 50px; 
+  background-color: #EBD96B;
+  border-radius: 8px; 
+  font-size: 24px; 
+  color: #000000;
+  margin-right: 20px
+}
