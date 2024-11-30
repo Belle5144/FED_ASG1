@@ -1,76 +1,11 @@
-/*header*/
 @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
-
 * {
-    font-family: 'Varela Round';
+  font-family: 'Varela Round';
 }
 
-body{
-  background-color: #F8F3EA;
+.home-box {
+  margin: 20px;
 }
-header{
-  background-color: #E1DAD5
-}
-.signature {
-  font-family: 'Brush Script MT'; 
-  font-size: 36px; 
-  color: #333; 
-  letter-spacing: 2px; 
-}
-
-.navigation-container{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: auto;
-  align-items: center;
-}
-
-.navigation-container > ul > li {
-  display: inline-block;
-  margin-right: 20px;
-  font-size: 25px;
-}
-
-.navigation-container > ul > li > a {
-  text-decoration: none;
-  color: black
-}
-
-input::placeholder {
-  color: white; /* Set placeholder text color to white */
-  opacity: 1;   /* Ensure full opacity for better visibility */
-}
-
-.Searchbar{
-  border-radius: 25px; 
-  background-color: #C1958C; 
-  padding: 10px;
-  
-}
-.Searchbar > input
-{
-  background-color: #C1958C;
-  border-width: 0; 
-}
-
-.login-button {
-  border-radius: 5px; 
-  background-color: #C1958C;
-  padding: 10px; 
-  color:#F8F3EA; 
-  border-width: 0; 
-  width: 100px;
-}
-
-.Register-button{
-  border-radius: 5px;
-   background-color: #F8F3EA; 
-   padding: 10px; color: #C1958C; 
-   border-width: 0;
-}
-
-/*Background image and title*/
 .Background_img{
   width: 100%; 
   height: 100vh; 
@@ -91,6 +26,9 @@ input::placeholder {
 }
 
 /*featured products*/
+.featured-products{
+  margin-left: 20px;
+}
 .Product1{
   display: flex; 
   justify-content: space-around;
@@ -130,48 +68,54 @@ input::placeholder {
 }
 
 .Title{
-  margin-top: 50px; 
-  font-size: 20px;
+  margin-top: 50px;
+  margin-left: 30px;
 }
 
 .Points{
   margin-bottom: 10px;
 }
 
-/*footer*/
-#footer{
-  background-color: #5E3E1A; 
-  color: white
-}
+@media only screen and (max-width: 430px) {
+  .home-box {
+    margin: 10px;
+  }
+  /*Background image and title*/
+  .Background_img{
+    height: 50vh;
+  }
 
-#footer1{
-  display: flex; 
-  flex-wrap: nowrap; 
-  justify-content: space-evenly;
-  margin-top: 20px
-}
+  /*featured products*/
+  .featured-products{
+    margin-left: 10px;
+    font-size: 25px;
+  }
+  .Product1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .Product1 h4{
+    font-size: 14px;
+  }
 
-#footer-info1{
-  display: flex; 
-  flex-wrap: nowrap; 
-  justify-content: space-evenly;
-  margin-top: 20px
-}
+  /*Upcoming products*/
+  .Product {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 
-#part1{
-  display: flex; 
-  flex-direction: column
-}
+  .Release-alert{
+    margin-left: 10px;
+    margin-top: 0px;
+    font-size: 25px;
+  }
+  .ul-title {
+    margin-left: 10px;
+  }
 
-.part1-icon{
-  display: inline-flex;
-  justify-content: center; 
-  align-items: center; 
-  width: 50px; 
-  height: 50px; 
-  background-color: #EBD96B;
-  border-radius: 8px; 
-  font-size: 24px; 
-  color: #000000;
-  margin-right: 20px
+  .Title{
+    margin-top: 10px; /* Reduce the margin above the titles */
+  }
 }

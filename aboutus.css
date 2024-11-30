@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+    font-family: 'Varela Round';
+}
+
+.main-about-us-box {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+}
+
+.about-us-box-1 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.img1 {
+    width: 500px;
+    height: auto;
+}
+
+.info-1 {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-us-box-2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.about-us-text-box-2 {
+    max-width: 800px;
+    width: 100%;
+}
+
+.img2 {
+    width: 500px;
+    height: auto;
+    margin-left: 300px;
+    
+}
+
+.info-2 {
+    margin-top: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.info-2 > p {
+    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 430px) {
+
+    .main-about-us-box {
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+    }
+
+    .about-us-box-1 {
+        margin-bottom: 20px;
+    }
+
+    .img1 {
+        width: 80%;
+        height: auto;
+    }
+
+    .info-1 {
+        text-align: left;
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .about-us-text-box-2 {
+        width: 90%; 
+        padding: 5px; 
+    }
+
+    .img2 {
+        width: 90%; 
+        margin-left: 35px;
+    }
+
+    .info-2 {
+        margin-top: 10px; 
+        font-size: 13px; 
+        line-height: 1.6; 
+    }
+}

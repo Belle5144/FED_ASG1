@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.min.css">
-    <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="header_footer.css">
+    <link rel="stylesheet" href="aboutus.css">
     <script src="https://kit.fontawesome.com/e2940c24d9.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-
 <header>
     <nav class="navigation-container">
         <h1 class="signature">Miffy</h1>
@@ -23,7 +20,7 @@
             <li><a href="www.google.com">Profile</a></li>
         </ul>
         <div class="Searchbar">
-            <i class="fa-solid fa-magnifying-glass" style=""></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
             <input type="text" placeholder="Search for products"/>
         </div>
         <div>
@@ -32,6 +29,7 @@
             <button class="Register-button">Register</button>
         </div>
     </nav>
+
     <div class="phone-navigation">
         <nav class="logo-container" >
             <h1 class="signature">Miffy</h1>
@@ -41,7 +39,7 @@
                 ☰
             </button>
             <div class="Searchbar" >
-                <i class="fa-solid fa-magnifying-glass" style=""></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="Search for products"/>
             </div>
             <i class="fa-solid fa-cart-shopping cart_icon"></i>
@@ -56,31 +54,62 @@
                 <li><a href="http://www.google.com">Profile</a></li>
             </ul>
             <div>
-                <button class="phone-login-button">Login</button>
-                <button class="phone-Register-button">Register</button>
+                 <button class="phone-login-button">Login</button>
+                 <button class="phone-Register-button">Register</button>
             </div>
         </div>
     </div>
 </header>
-
 <main>
-    <div class="product-container">
-        <div class="product-header">
+    <div class="main-about-us-box">
+        <h3 style="color: #C1958C;">Home > About Us ></h3>
+        <div class="about-us-box-1">
             <div>
-                <h3 style="color: #C1958C;">Home>Products></h3>
-            </div>
-            
-            <div class="pagination">
-                <button class="arrow">&lt;</button>
-                <button class="page ">1</button>
-                <button class="page active">2</button>
-                <button class="page">3</button>
-                <span class="dots">...</span>
-                <button class="page">35</button>
-                <button class="arrow">&gt;</button>
+                <img src="image/aboutus1.jpeg" alt="About us image" class="img1" />
+                <div class="info-1" >
+                    <p >
+                        Miffy Shop UK brings all the best Miffy merchandise to one place.
+                        At the click of a button you can fill your home with gorgeous Miffy products.
+                        The gift products available on the Official Miffy Shop are supplied from various manufacturers in the UK
+                        and abroad. Our shop only stocks Official Miffy high-quality products,
+                        so we can guarantee that you will be delighted with your purchases.
+                    <ul >
+                        <li>Baby Gifts for the littlest of Miffy fans</li>
+                        <li>Crochet Toys featuring Miffy & friends</li>
+                        <li>Home Decor Accessories for grown-up Miffy fans</li>
+                        <li>Lighting for bedrooms, nurseries & more</li>
+                    </ul>
+                    <br>The Official Miffy Webshop is also the only place you will find this personalised gifts range.
+                    With gifts for those who have only just discovered this adorable little bunny,
+                    right through to those lifelong fans. Our exclusive gift selection includes:
+                    <ul >
+                        <li>Personalised Cushions for your living or bedrooms</li>
+                        <li>Personalised Lunch Boxes for little ones to take to school</li>
+                        <li>Personalised Tea Towels to add a pop of colour to your kitchen</li>
+                        <li>Personalised Water Bottles so you can take your favourite drinks with you</li>
+                    </ul>
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="product-grid" id="productGrid">
+        <div class="about-us-box-2">
+            <div class="about-us-text-box-2">
+                <img src="image/aboutus2.jpeg" alt="About us image" class="img2" />
+                <div class="info-2">
+                    <p >
+                        This rabbit character has been created by a Dutchman, Dick Bruna. Obviously its original name is the
+                        Dutch nijntje, not the English miffy.
+                        As the Dutch word for rabbit is konijn, the character’s name is a (childish) abbreviation, simply
+                        leaving out the first syllable. And -tje is a diminutive ending, so:
+                        konijn without first syllable gives nijn
+                        with diminutive ending gives nijntje.
+                        Dick Bruna consequently had been avoiding capitalizing. Therefore it’s nijntje rather than Nijntje.
+                        <br>Together with his translator, the writer invented a new word/name that could equivalently be used in
+                        international editions of Nijntje. One agreed on “Miffy”.
+                        “Miffy” would be a name that could easily be associated with a (little) rabbit.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </main>
@@ -132,6 +161,5 @@
 <div id="modal-placeholder">
 </div>
 </body>
-<script src="product.js"></script>
 <script src="auth.js"></script>
 </html>

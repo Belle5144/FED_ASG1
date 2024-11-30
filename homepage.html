@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize-css@2.3.1/normalize.min.css">
+    <link rel="stylesheet" href="header_footer.css">
     <link rel="stylesheet" href="homepage.css">
     <script src="https://kit.fontawesome.com/e2940c24d9.js" crossorigin="anonymous"></script>
 </head>
@@ -17,100 +18,142 @@
         <ul class="">
             <li><a href="homepage.html">Home</a></li>
             <li><a href="product.html">Products</a></li>
-            <li><a href="www.google.com">About Us</a></li>
-            <li><a href="www.google.com">Profile</a></i>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="www.google.com">Profile</a></li>
         </ul>
         <div class="Searchbar">
+            <i class="fa-solid fa-magnifying-glass" ></i>
             <input type="text" placeholder="Search for products"/>
-
         </div>
         <div>
-            <i class="fa-solid fa-cart-shopping" style=" font-size: 19px; margin-right: 15px;"></i>
+            <i class="fa-solid fa-cart-shopping cart_icon"></i>
             <button class="login-button">Login</button>
             <button class="Register-button">Register</button>
         </div>
     </nav>
+    <div class="phone-navigation">
+        <nav class="logo-container" >
+            <h1 class="signature">Miffy</h1>
+        </nav>
+        <div class="phone-sub-navigation">
+            <button id="hamburger-button" >
+                ☰
+            </button>
+            <div class="Searchbar" >
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search for products"/>
+            </div>
+            <i class="fa-solid fa-cart-shopping cart_icon"></i>
+        </div>
+
+        <div id="phone-side-menu">
+            <button id="side-menu-close-button">×</button>
+            <ul class="phone-side-menu-button">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="product.html" >Products</a></li>
+                <li><a href="aboutus.html" >About Us</a></li>
+                <li><a href="http://www.google.com">Profile</a></li>
+            </ul>
+            <div>
+                <button class="phone-login-button">Login</button>
+                <button class="phone-Register-button">Register</button>
+            </div>
+        </div>
+    </div>
+
 </header>
 <main>
     <div Class="Background_img">
         <h1>Miffy</h1>
         <p>Corduroy Collection</p>
-
     </div>
-
-    <h2 style="margin-left: 20px;">Featured products:</h2>
-    <div Class="Product1" >
-        <div>
-            <div class="square-box">
-                <img src="image/product1.png" alt="Image inside box" class="square-image">
-            </div>
-            <h4>Miffy Sitting Corduroy Plush ></h4>
-        </div>
-        <div>
-            <div class="square-box">
-                <img src="image/product2.png" alt="Image inside box" class="square-image">
-            </div>
-            <h4>Miffy face keychain ></h4>
-        </div>
-        <div>
-            <div class="square-box">
-                <img src="image/product3.png" alt="Image inside box" class="square-image">
-            </div>
-            <h4>Miffy face tote bag ></h4>
-        </div>
-        <div>
-            <div class="square-box">
-                <img src="image/product4.png" alt="Image inside box" class="square-image">
-            </div>
-            <h4>Miffy Terry Soft Plush ></h4>
-        </div>
-        <div>
-            <div class="square-box">
-                <img src="image/product4.png" alt="Image inside box" class="square-image">
-            </div>
-            <h4>Miffy Terry Soft Plush ></h4>
-        </div>
-    </div>
-    <hr>
-    <h2 class="Release-alert">Upcoming Release Alert!</h2>
-    <div class="Product">
-        <div>
+    <div class="home-box">
+        <h2 class="featured-products">Featured products:</h2>
+        <div Class="Product1" >
             <div>
-                <img class="Img" src="image/product5.png" alt="product image">
+                <div class="square-box">
+                    <img src="image/product1.png" alt="Image inside box" class="square-image">
+                </div>
+                <h4>Miffy Sitting Corduroy Plush ></h4>
             </div>
-        </div>
-        <div>
-            <h2 class="Title">💖 Why You’ll Love Rainbow Miffy:</h2>
-            <ul style="margin-top: 0; ">
-                <li class="Points">Vibrant Colors: Every shade of the rainbow for a magical and cheerful look.</li>
-                <li class="Points"> Super Soft & Cuddly: Made from high-quality, plush fabric that’s gentle on the skin.</li>
-                <li>Perfect Gift: A unique gift idea for birthdays, holidays, or just because!</li>
-            </ul>
-        </div>
-    </div>
-    <div class="Product">
-        <div>
             <div>
-                <img class="Img" src="image/product6.jpg" alt="product image">
+                <div class="square-box">
+                    <img src="image/product2.png" alt="Image inside box" class="square-image">
+                </div>
+                <h4>Miffy face keychain ></h4>
+            </div>
+            <div>
+                <div class="square-box">
+                    <img src="image/product3.png" alt="Image inside box" class="square-image">
+                </div>
+                <h4>Miffy face tote bag ></h4>
+            </div>
+            <div>
+                <div class="square-box">
+                    <img src="image/product4.png" alt="Image inside box" class="square-image">
+                </div>
+                <h4>Miffy Terry Soft Plush ></h4>
+            </div>
+            <div>
+                <div class="square-box">
+                    <img src="image/product4.png" alt="Image inside box" class="square-image">
+                </div>
+                <h4>Miffy Terry Soft Plush ></h4>
             </div>
         </div>
-        <div>
-            <h2 class="Title">💖 Why You’ll Love Miffy Towel:</h2>
-            <ul style="margin-top: 0; ">
-                <li class="Points">Soft & Absorbent: Crafted from high-quality, quick-drying fabric for ultimate comfort.</li>
-                <li class="Points">Cute Rabbit Design: Features adorable rabbit ears and a sweet face for a playful touch.</li>
-                <li>Perfect for All Ages: A charming addition to any bathroom or poolside look!</li>
-            </ul>
+        <hr>
+        <marquee behavior="scroll" direction="right" scrollamount="10">
+            <p>🐰 Welcome to Miffy Shop SG! Discover our exclusive Miffy collections, including personalized cushions, lunch boxes, and tea towels. 
+                Enjoy free shipping across Singapore for orders over SGD 50. 
+                Check out the latest Rainbow Miffy plush toy and adorable home decor items—perfect for any occasion! 
+                Shop now and bring the joy of Miffy to your home! 🐰
+                🐰 Welcome to Miffy Shop SG! Discover our exclusive Miffy collections, including personalized cushions, lunch boxes, and tea towels. 
+                Enjoy free shipping across Singapore for orders over SGD 50. 
+                Check out the latest Rainbow Miffy plush toy and adorable home decor items—perfect for any occasion! 
+                Shop now and bring the joy of Miffy to your home! 🐰</p></marquee>
+
+        <h2 class="Release-alert">Upcoming Release Alert!</h2>
+        <div class="Product">
+            <div>
+                <div>
+                    <img class="Img" src="image/product5.png" alt="product image">
+                </div>
+            </div>
+            <div>
+                <h2 class="Title">💖 Why You’ll Love Rainbow Miffy:</h2>
+                <ul class="ul-title" style="margin-top: 0; margin-left: 30px;">
+                    <li class="Points">Vibrant Colors: Every shade of the rainbow for a magical and cheerful look.</li>
+                    <li class="Points"> Super Soft & Cuddly: Made from high-quality, plush fabric that’s gentle on the skin.</li>
+                    <li>Perfect Gift: A unique gift idea for birthdays, holidays, or just because!</li>
+                </ul>
+            </div>
         </div>
+        
+        <div class="Product">
+            <div>
+                <div>
+                    <img class="Img" src="image/product5.png" alt="product image">
+                </div>
+            </div>
+            <div>
+                <h2 class="Title">💖 Why You’ll Love Rainbow Miffy:</h2>
+                <ul class="ul-title" style="margin-top: 0; margin-left: 30px;">
+                    <li class="Points">Vibrant Colors: Every shade of the rainbow for a magical and cheerful look.</li>
+                    <li class="Points"> Super Soft & Cuddly: Made from high-quality, plush fabric that’s gentle on the skin.</li>
+                    <li>Perfect Gift: A unique gift idea for birthdays, holidays, or just because!</li>
+                </ul>
+            </div>
+        </div>
+        
     </div>
 </main>
-<footer id="footer">
-    <div id="footer1">
-        <div>
-            <img src="image/footer_img.png" alt="product image" style="max-width: 100px; height: auto;">
-        </div>
+<footer id="footer" >
+    <div style="text-align: center;">
+        <img src="image/footer_img.png" alt="product image">
+    </div>
+    <div id="footer1" style="margin-top: 0px;">
         <div id="part1">
-            <h1 class="signature" style="color:white; margin-left: 20px;">Miffy</h1>
+            <h1 class="signature signature_footer">Miffy</h1>
             <p>Web shop fulfilled by <span style="text-decoration: underline">Star <br> Editions</span></p>
             <div style="display: flex; justify-content: space-between">
                 <div class="part1-icon">
@@ -128,26 +171,29 @@
                 
             </div>
         </div>
-        <div style="display: flex; flex-direction: column">
+        <div>
             <h2>Information</h2>
-            <p style="margin: 0">About</p>
-            <p style="margin: 0">Contact us</p>
-            <p style="margin: 0">FAQs</p>
-            <p style="margin: 0">Account</p>
+            <p>About</p>
+            <p>Contact us</p>
+            <p>FAQs</p>
+            <p>Account</p>
         </div>
-        <div style="display: flex; flex-direction: column">
+        <div>
             <h2>Contact</h2>
-            <p>Stanley House <br> Masterlord Village,<br> West Rd, Ipswich<br> 95X</p>
+            <p>Stanley House </p> 
+            <p>Masterlord Village,</p> 
+            <p>West Rd, Ipswich<br> 95X</p>
         </div>
-        <div style="display: flex; flex-direction: column">
+        <div>
             <h2>Legal</h2>
-            <p style="margin: 0">Cookie Policy</p>
-            <p style="margin: 0">Privacy Policy</p>
-            <p style="margin: 0">Privacy Policy</p>
+            <p>Cookie Policy</p>
+            <p>Privacy Policy</p>
+            <p>Privacy Policy</p>
         </div>
     </div>
 </footer>
-
+<div id="modal-placeholder">
+</div>
 </body>
-
+<script src="auth.js"></script>
 </html>
