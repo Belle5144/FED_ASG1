@@ -48,9 +48,7 @@ figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_Be
 
 ## Technologies Used
 - HTML5
- - Used for structuring the content and layout of the website, ensuring semantic and accessible design.
-
----
+    - Used for structuring the content and layout of the website, ensuring semantic and accessible design
 
 ## Website Functions
 
