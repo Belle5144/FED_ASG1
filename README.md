@@ -26,7 +26,7 @@ figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_Be
 
 ## Features
 Existing Features
-Allows users to navigate to different pages such as the Home, Products, and About Us page, by tapping on the respective links in the header
+<li Allows users to navigate to different pages such as the Home, Products, and About Us page, by tapping on the respective links in the header
 Allows users to browse all available products, by tapping on the product navigator 
 Allows users to access detailed information about a product, including size, color, price, and description, by clicking on a product in the product list
 Allows users to log in to their accounts by entering their email and passwords in the log in pop-up modal
