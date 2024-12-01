@@ -4,11 +4,25 @@ I have created an e-commerce website to deliver a seamless shopping experience f
 Key highlights of the website include an organized homepage showing featured and upcoming products,  product list page providing an overview of all available items, while a detailed product page with options for size and color selection and a smooth interactive login and registration system. The website ensures a user-friendly experience with responsive design making it accessible across devices.
 
 ## Design Process
+The design of this e-commerce website is centered around the needs of parents, our primary users. They are often busy and may not have so much time to spend on shopping, hence they would seek for a convenient and efficient website to purchase products for their children. Their primary goals are to quickly find suitable items, access the details of the product and complete purchases in a short period of time. Additionally, the website caters indirectly to children, as the playful and engaging design reflects the fun and family-oriented nature of the products.
 
+## How this website helps to achieve these goals
+The project helps parents to achieve their goals by providing an easy-to-navigate structure, so that they can explore featured, upcoming, and all available products without confusion. Detailed product pages clearly display information like size, color, pricing, and reviews, helping parents make informed choices. The login and registration features are designed to be simple and secure. The warm color palette and clean layout ensure the website is not only visually appealing but also works well across all devices. Additionally, the playful design adds warmth and charm, making the shopping experience more enjoyable and stress-free for parents. It creates an inviting atmosphere that encourages exploration, helping parents feel at ease while finding the perfect products for their family.
 
-## Design Theme
+User Stories
+As a parent, I want to browse a product list, so that I can see all the items available in one place and easily choose what I need.
 
-The website design is intended to feel **warm and inviting** with a **minimalistic approach** for simplicity and easy navigation. The use of **rounded elements** and a playful vibe reflects the target audience of children and parents, creating a sense of fun and comfort.
+As a parent, I want to view detailed product information, so that I can make informed decisions about my purchases.
+
+As a parent, I want to filter products by size and color, so that I can quickly find items that suit my specific requirements.
+
+As a parent, I want a secure and simple login and registration process, so that I can save my preferences and track my orders conveniently.
+
+As a parent, I want a smooth checkout process, so that I can complete my purchases quickly without any hassle.
+
+As a parent, I want the website to have a warm and inviting design, so that I feel comfortable and stress-free while shopping.
+
+As a busy parent, I want the website to work seamlessly on any device, so that I can shop conveniently whether I’m at home or on the go.
 
 ---
 
