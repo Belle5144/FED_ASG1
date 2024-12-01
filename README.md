@@ -1,11 +1,10 @@
 # FED Assignment 1: Creating a Website
-
----
-
-## Design Ideas
-My project is a vibrant e-commerce website designed to deliver a seamless shopping experience for families. The website is warm and inviting designed to cater to parents looking for high-quality playful products for their children. It features an intuitive interface with clear navigation allowing users to easily explore products, view details and complete their purchases effortlessly.
+I have created an e-commerce website to deliver a seamless shopping experience for families. The website is warm and inviting designed to cater to parents looking for high-quality playful products for their children. It features an intuitive interface with clear navigation allowing users to easily explore products, view details and complete their purchases effortlessly.
 
 Key highlights of the website include an organized homepage showing featured and upcoming products,  product list page providing an overview of all available items, while a detailed product page with options for size and color selection and a smooth interactive login and registration system. The website ensures a user-friendly experience with responsive design making it accessible across devices.
+
+## Design Process
+
 
 ## Design Theme
 
