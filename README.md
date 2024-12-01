@@ -6,7 +6,7 @@ Key highlights of the website include an organized homepage showing featured and
 ## Design Process
 The design of this e-commerce website is centered around the needs of parents, our primary users. They are often busy and may not have so much time to spend on shopping, hence they would seek for a convenient and efficient website to purchase products for their children. Their primary goals are to quickly find suitable items, access the details of the product and complete purchases in a short period of time. Additionally, the website caters indirectly to children, as the playful and engaging design reflects the fun and family-oriented nature of the products.
 
-How the website achieve these goals:
+How the website helps to achieve these goals:
 The project helps parents to achieve their goals by providing an easy-to-navigate structure, so that they can explore featured, upcoming, and all available products without confusion. Detailed product pages clearly display information like size, color, pricing, and reviews, helping parents make informed choices. The login and registration features are designed to be simple and secure. The warm color palette and clean layout ensure the website is not only visually appealing but also works well across all devices. Additionally, the playful design adds warmth and charm, making the shopping experience more enjoyable and stress-free for parents. It creates an inviting atmosphere that encourages exploration, helping parents feel at ease while finding the perfect products for their family.
 
 User Stories
