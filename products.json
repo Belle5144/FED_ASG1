@@ -1,9 +1,15 @@
 [
-  { "id": 1, "title": "Product 1", "price": "$10", "image": "image/product1.png", "rating": 3, "totalReview": 200, "description": "xxxxxx", "weight": "0.5", "dimensions": "1 x 2 x 9" },
-  { "id": 2, "title": "Product 2", "price": "$15", "image": "image/product2.png", "rating": 3, "totalReview": 100 },
-  { "id": 3, "title": "Product 3", "price": "$20", "image": "image/product3.png" },
-  { "id": 4, "title": "Product 4", "price": "$25", "image": "image/product4.png" },
-  { "id": 5, "title": "Product 5", "price": "$30", "image": "image/product1.png" },
-  { "id": 6, "title": "Product 6", "price": "$35", "image": "image/product2.png" },
-  { "id": 7, "title": "Product 7", "price": "$40", "image": "image/product3.png" }
+  { "id": 1, "title": "Miffy Sitting Corduroy Plush", "price": "$32.00", "image": "image/product1.png", "rating": 5, "totalReview": 200, "description": " Crafted from premium-quality corduroy fabric, this plush toy offers a unique texture that's both stylish and comforting. ", "weight": "0.5", "dimensions": "1 x 2 x 9" },
+  { "id": 2, "title": "Miffy Tote Bag", "price": "$15.00", "image": "image/product2.png", "rating": 4, "totalReview": 200, "description": "100% cotton canvas tote bag, Long handled.", "weight": "0.2kg", "dimensions": "36cm x 36cm"  },
+  { "id": 3, "title": "Miffy Flat keychain", "price": "$20.00", "image": "image/product3.png", "rating": 3, "totalReview": 70, "description": "xxxxxx", "weight": "0.3kg", "dimensions": "1 x 2 x 9" },
+  { "id": 4, "title": "Miffy Calendar 2024", "price": "$25.00", "image": "image/product7.png", "rating": 2, "totalReview": 20, "description": "the perfect blend of style, functionality, and sustainability! Stay organised throughout the year with this charming calendar, designed to help you keep track of important dates, appointments, and events.", "weight": "0.5", "dimensions": "A3 size"  },
+  { "id": 5, "title": "Miffy Tote bag -RMB", "price": "$30.00", "image": "image/product8.png", "rating": 3, "totalReview": 50, "description": "100% cotton canvas tote bag, short handled", "weight": "0.2kg", "dimensions": "36cm x 36cm strap length: 20cm"  },
+  { "id": 6, "title": "Miffy Animal Coloured Inser Mug ", "price": "$35.00", "image": "image/product9.png", "rating": 5, "totalReview": 27, "description": "xxxxxx", "weight": "0.5", "dimensions": "1 x 2 x 9"  },
+  { "id": 7, "title": "Miffy Reach For The Stars Mug", "price": "$40.00", "image": "image/product10.png","rating": 3, "totalReview": 98, "description": "xxxxxx", "weight": "0.5", "dimensions": "1 x 2 x 9"  },
+  { "id": 8, "title": "Miffy Face PostCard", "price": "$4.00", "image": "image/product11.png","rating": 3, "totalReview": 98, "description": "xxxxxx", "weight": "0.5", "dimensions": "1 x 2 x 9"  },
+  { "id": 9, "title": "Miffy Coloured Dressed Towel", "price": "$6.00", "image": "image/product12.png","rating": 3, "totalReview": 98, "description": "xxxxxx", "weight": "0.5", "dimensions": "1 x 2 x 9"  },
+  { "id": 10, "title": "Miffy Sat on the Moon Framed", "price": "$21.00", "image": "image/product13.png","rating": 3, "totalReview": 98, "description": "xxxxxx", "weight": "0.5", "dimensions": "1 x 2 x 9"  },
+  { "id": 11, "title": "Miffy All Over Yellow Gift Wrapg", "price": "$9.00", "image": "image/product14.png","rating": 3, "totalReview": 98, "description": "xxxxxx", "weight": "0.5", "dimensions": "1 x 2 x 9"  },
+  { "id": 12, "title": "Miffy Baby napkins- 16pack", "price": "$4.00", "image": "image/product15.png","rating": 3, "totalReview": 98, "description": "xxxxxx", "weight": "0.5", "dimensions": "1 x 2 x 9"  },
+  { "id": 13, "title": "Miffy Face Outline Baby Bib", "price": "$17.00", "image": "image/product16.png","rating": 3, "totalReview": 98, "description": "xxxxxx", "weight": "0.5", "dimensions": "1 x 2 x 9"  }
 ]
