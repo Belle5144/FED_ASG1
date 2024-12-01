@@ -49,6 +49,18 @@ figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_Be
 ## Technologies Used
 - HTML5
     - Used for structuring the content and layout of the website, ensuring semantic and accessible design
+- CSS3
+    - Used for styling the website, including layouts, colors, fonts, and responsive design to ensure visual appeal across devices.
+- JavaScript
+    - Used to add interactivity, such as dynamic navigation, modal dialogs, and login/registration validation
+- Font Awesome
+    - Used for incorporating scalable icons for elements like search, login, and navigation buttons
+- Normalize.css
+    - Used to provide consistent styling across different browsers by normalizing default CSS
+- Google Fonts (Varela Round)
+    - Used to enhance the typography with a clean, rounded font that aligns with the website's playful design
+- LocalStorage API
+    - Used for storing user login and registration data persistently to simulate session management.
 
 ## Website Functions
 
