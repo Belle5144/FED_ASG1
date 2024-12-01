@@ -28,12 +28,13 @@ figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_Be
 Existing Features
 · Allows users to navigate to different pages such as the Home, Products, and About Us page, by tapping on the respective links in the header  
 · Allows users to browse all available products, by tapping on the product navigator  
+· Allows users to browse information about the website, by tapping on the about us navigator  
 · Allows users to access detailed information about a product, including size, color, price, and description, by clicking on a product in the product list  
-· Allows users to log in to their accounts by entering their email and passwords in the log in pop-up modal  
-· Allows users to register their accounts by entering their email and a password in the register modal  
+· Allows users to log in to their accounts by entering their email and passwords in the log in pop-up modal by tapping the Sign in button
+· Allows users to register their accounts by entering their email and a password in the register modal by tapping the reguster button
 · Allows users to see confirmation of a successful login or registration by displaying a message after the process  
 · Allows users to get back to the page after signing in or registering an account by clicking "Return to Dashboard" (button)  
-· **Dark Charcoal Grey:** Used for signature text, offering contrast and an elegant brandi
+· Allows users to browse the website seamlessly on any device by adapting the layout to different screen sizes.
 
 ---
 
