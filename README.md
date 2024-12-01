@@ -46,9 +46,9 @@ figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_Be
 - Allows users to view and edit their account details or track their orders, by accessing a dedicated profile page. 
 
 
-## Font Usage
-Font: **Varela Round**  
-Applied to all text for a clean, rounded typography that complements the soft tones of the site.
+## Technologies Used
+-HTML5
+ -Used for structuring the content and layout of the website, ensuring semantic and accessible design.
 
 ---
 
