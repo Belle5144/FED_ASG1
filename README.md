@@ -80,7 +80,34 @@ figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_Be
   - Steps: Enter a registered email and the correct password. Click the "Login" button.
   - Expected Result: The login is successful. A modal with a success message is displayed, and the user is redirected to the homepage or another designated page.
 
----
+### 2. Registration Button Testing Scenarios
+
+- Test 1: Empty Fields
+  - Steps: Open the registration modal and click the "Sign Up" button without entering any information.
+  - Expected Result: No action occurs, as there is no explicit error message for empty fields in the current implementation.
+
+- Test 2: Invalid Email Format
+  - Steps: Enter an invalid email format (e.g., user@com) in the email field and click the "Sign Up" button.
+  - Expected Result: An alert appears with the message: "Invalid email address!" indicating the email format does not match the expected pattern.
+
+- Test 3: Weak or Invalid Password
+  - Steps: Enter a valid email and a password that does not meet the requirements (e.g., fewer than 7 characters or contains special symbols). Click the "Sign Up" button.
+  - Expected Result: An alert appears with the message: "Invalid password! Password must be 7-14 characters long and contain only letters, numbers, and underscores."
+
+- Test 4: Duplicate Email
+  - Steps: Enter an email address that is already registered in localStorage and a valid password. Click the "Sign Up" button.
+  - Expected Result: An alert appears with the message: "This email has already been registered!" indicating the email is not available for a new account.
+
+- Test 5: Successful Registration
+  - Steps: Enter a valid, unregistered email and a valid password. Click the "Sign Up" button.
+  - Expected Result: The registration is successful. A modal with a success message is displayed, and the user's login status is updated in localStorage
+
+
+
+
+
+
+
 
 ## Acknowledgements
 - Inspired by: [Miffy Shop](https://miffyshop.co.uk/)
