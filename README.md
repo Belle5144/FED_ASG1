@@ -27,23 +27,23 @@ figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_Be
 ## Features
 ### Existing Features
 - Allows users to navigate to different pages such as the Home, Products, and About Us page, by tapping on the respective links in the header  
-· Allows users to browse all available products, by tapping on the product navigator  
-· Allows users to browse information about the website, by tapping on the about us navigator  
-· Allows users to access detailed information about a product, including size, color, price, and description, by clicking on a product in the 
+- Allows users to browse all available products, by tapping on the product navigator  
+- Allows users to browse information about the website, by tapping on the about us navigator  
+- Allows users to access detailed information about a product, including size, color, price, and description, by clicking on a product in the 
   product list  
-· Allows users to log in to their accounts by entering their email and passwords in the log in pop-up modal by tapping the Sign in button
-· Allows users to register their accounts by entering their email and a password in the register modal by tapping the reguster button
-· Allows users to see confirmation of a successful login or registration by displaying a message after the process  
-· Allows users to get back to the page after signing in or registering an account by clicking "Return to Dashboard" (button)  
-· Allows users to browse the website seamlessly on any device by adapting the layout to different screen sizes.
+- Allows users to log in to their accounts by entering their email and passwords in the log in pop-up modal by tapping the Sign in button
+- Allows users to register their accounts by entering their email and a password in the register modal by tapping the reguster button
+- Allows users to see confirmation of a successful login or registration by displaying a message after the process  
+- Allows users to get back to the page after signing in or registering an account by clicking "Return to Dashboard" (button)  
+- Allows users to browse the website seamlessly on any device by adapting the layout to different screen sizes.
 
 ### Features Left to Implement
-· Allows users to add selected products to a virtual shopping cart for purchase later, by clicking on the "Add to Cart" button on the product 
+- Allows users to add selected products to a virtual shopping cart for purchase later, by clicking on the "Add to Cart" button on the product 
   details page.
-· Allows users to find specific products quickly, by typing keywords into a search bar and receiving matching results
-· Allows users to review their cart and complete purchases, by proceeding through a checkout page with payment and shipping options
-· Allows users to sort and filter products by attributes like price, size, or color, by using options available on the product list page
-· Allows users to view and edit their account details or track their orders, by accessing a dedicated profile page. 
+- Allows users to find specific products quickly, by typing keywords into a search bar and receiving matching results
+- Allows users to review their cart and complete purchases, by proceeding through a checkout page with payment and shipping options
+- Allows users to sort and filter products by attributes like price, size, or color, by using options available on the product list page
+- Allows users to view and edit their account details or track their orders, by accessing a dedicated profile page. 
 
 
 ## Font Usage
