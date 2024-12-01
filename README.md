@@ -26,7 +26,13 @@ figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_Be
 
 ## Features
 Existing Features
-<li **Soft Brownish Pink:** Search bar background, login button background, placeholder text in input fields, and text color of the Register button, adding warmth and highlighting interactivity. li/>
+<li Allows users to navigate to different pages such as the Home, Products, and About Us page, by tapping on the respective links in the header. li/>
+<li Allows users to browse all available products, by tapping on the product navigator li/>
+<li Allows users to access detailed information about a product, including size, color, price, and description, by clicking on a product in the product list.li/>
+<li Allows users to log in to their accounts by entering their email and passwords in the log in pop-up modalli/>
+<li Allows users to register their accounts by entering their email and a passwords in the register modal li/>
+<li Allows users to see confirmation of a successful login or registration by displaying a message after the process>
+<li Allows users to get back to the page after signing in or registering an account by clicking "Return to Dashboard" (button)li/>
 - **Dark Charcoal Grey:** Used for signature text, offering contrast and an elegant branding touch.
 
 ---
