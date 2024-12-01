@@ -1,33 +1,29 @@
 function togglePassword() {
-    const passwordField = document.getElementById('password-input');
-    const eyeIcon = document.getElementById('eye-icon');
+    const passwordField = document.getElementById('password-input');     // Selects the password input field by its ID
+    const eyeIcon = document.getElementById('eye-icon');                 // Selects the eye icon by its ID
 
-    // toggle the input type between password and text
-    if (passwordField.type === 'password') {
-        passwordField.type = 'text';
+    if (passwordField.type === 'password') {                             // If the field type is 'password' (hidden characters)
+        passwordField.type = 'text';                                     // Change it to 'text', making the characters visible
         eyeIcon.classList.remove('fa-eye');
         eyeIcon.classList.add('fa-eye-slash');
     } else {
-        passwordField.type = 'password'; // Hide password
-        eyeIcon.classList.remove('fa-eye-slash'); // Change icon to eye
-        eyeIcon.classList.add('fa-eye');
+        passwordField.type = 'password';                                 // Hide password
+        eyeIcon.classList.remove('fa-eye-slash');                        // Remove the 'eye' icon class
+        eyeIcon.classList.add('fa-eye');                                 // Add the 'eye-slash' icon class to indicate visibility
     }
 }
-
 function signUp(){
     event.preventDefault()
     const inputEmail = document.querySelector("#email-input");
     const inputPassword = document.querySelector("#password-input");
 
-    // create local storage or get data from it
-    var arrayEmailLC = JSON.parse(localStorage.getItem("emailLC"));
-    var arrayPwLC = JSON.parse(localStorage.getItem("pwLC"));
-
-    const arrayEmail = [];
+    var arrayEmailLC = JSON.parse(localStorage.getItem("emailLC"));      //retrieves the value stored in localStorage with the key "emailLC".
+    var arrayPwLC = JSON.parse(localStorage.getItem("pwLC"));            //converts the string into a JavaScript array.
+ 
+    const arrayEmail = [];                                               //Create an new array to store the available values
     const arrayPw = [];
 
-    // get all data from local storage and push into array
-    if (arrayEmailLC != null) {
+    if (arrayEmailLC != null) {                                          //pushing the values into the array
         for (const i in arrayEmailLC) {
             arrayEmail.push(arrayEmailLC[i]);
         }
@@ -35,88 +31,49 @@ function signUp(){
             arrayPw.push(arrayPwLC[i]);
         }
     }
-    var email = inputEmail.value;
+    var email = inputEmail.value;                                        //getting the input values
     var password = inputPassword.value;
 
     // Validation for email
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
-        console.log("Valid email");
+    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)){}   //method executes the regex and checks if the email matches the pattern
     else {
-        alert("Invalid email address!")
-        return false;
+        alert("Invalid email address!")                                  //browser alert
+        return false;                                                    //terminates the entire function
     }
 
     // Validation for password
-    if (/^\w{7,14}$/.test(password))
-        console.log("Valid password!");
+    if (/^\w{7,14}$/.test(password)){}
     else {
         alert("Invalid password!\n\nPassword have to be:\n" +
             " \u27A5 in 7-14 characters\n \u27A5 only letters, numbers, underscore")
         return false;
     }
 
-    // Email already exist
-    if (arrayEmail.includes(email)) {
+    if (arrayEmail.includes(email)) {                                   //Checking if the email existed, sign up before
         alert("This email has already registered!");
         return false;
     }
 
-    // If not exist, add data into array
-    arrayEmail.push(email);
+    arrayEmail.push(email);                                             //If not exist, add data into array
     arrayPw.push(password);
-    localStorage.setItem('emailLC', JSON.stringify(arrayEmail));
+    localStorage.setItem('emailLC', JSON.stringify(arrayEmail));        //Saves the arrayEmail to localStorage and convert it back to string
     localStorage.setItem('pwLC', JSON.stringify(arrayPw));
-    const username = email.split('@')[0];
-    localStorage.setItem('loginUser', username);
-    localStorage.isLogin = true;
+    const username = email.split('@')[0];                               //spliting the email and accessing the front part
+    localStorage.setItem('loginUser', username);                        //Saves it as a username
+    localStorage.isLogin = true;                                        //Updating log in status
 
     openSuccessModal()
 }
 
-function openContinueWithGoogleModal(){
-    event.preventDefault();
+function openContinueWithGoogleModal() {
+    event.preventDefault();                                                        // Prevent default behavior, refreshing
+
     fetch('continue_with_google.html')
-        .then(response => response.text())
+        .then(response =>response.text())                                          // Get the HTML content as a string
         .then(html => {
-            document.getElementById('modal-placeholder').innerHTML = html;
-
-            //Dynamic load the javascript file to support modal function
-            const script = document.createElement('script');
-            script.src = 'modal.js';  // Path to your external JS file
-            script.onload = () => {
-                console.log('External JS loaded');
-            };
-            document.body.appendChild(script); // Append the script to the body
-            const script2 = document.createElement('script');
-            script2.src = 'continue_with_google.js'; // Path to the second script
-            script2.onload = () => {
-                console.log('Continue with google dialog JS loaded');
-            }
-            document.body.appendChild(script2);
-
-            // Get the modal and modal container elements
-            const modal = document.querySelector('.full-screen-wrapper');
-            const modalContainer = document.querySelector('.modal-container');
-            if (modal && modalContainer) {
-                // Make sure the modal is hidden.
-                modal.style.opacity = '0';
-                modalContainer.style.top = '-100%';
-
-                //Delay it to make sure the content is load then only perform animation
-                setTimeout(() => {
-                    modal.style.transition = 'opacity 0.5s ease';
-                    modalContainer.style.transition = 'top 0.8s ease, transform 0.8s ease';
-                    modal.style.opacity = '1';
-                    modalContainer.style.top = '50%';
-                    modalContainer.style.transform = 'translate(-50%, -50%)';
-                }, 100);
-
-                // Prevent scrolling when modal is open
-                document.body.style.overflow = 'hidden';
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching the Continue With Google HTML:', error);
+            const modalPlaceholder = document.getElementById('modal-placeholder'); //Get the ID
+            modalPlaceholder.innerHTML = html;                                     //Insert vthe contents into the ID
+            Animation1('.full-screen-wrapper', '.modal-container');
         });
 }
 
@@ -125,50 +82,18 @@ function openSuccessModal(){
         .then(response => response.text())
         .then(html => {
             document.getElementById('modal-placeholder').innerHTML = html;
-
-            //Dynamic load the javascript file to support modal function
-            const script = document.createElement('script');
-            script.src = 'modal.js';  // Path to your external JS file
-            script.onload = () => {
-                console.log('External JS loaded');
+            const script = document.createElement('script');                       //Creatng script to contain js
+            script.src = 'modal.js';  
+            script.onload = () => {                                                //onload ensures that your code runs only after the content has been added
+                console.log('External JS loaded');                                 
             };
-            document.body.appendChild(script); // Append the script to the body
+            document.body.appendChild(script); 
             const script2 = document.createElement('script');
-            script2.src = 'success_dialog.js'; // Path to the second script
+            script2.src = 'success_dialog.js';
             script2.onload = () => {
                 console.log('Success dialog JS loaded');
             }
             document.body.appendChild(script2);
-
-
-            // Get the modal and modal container elements
-            const modal = document.querySelector('.full-screen-wrapper');
-            const modalContainer = document.querySelector('.modal-container');
-            if (modal && modalContainer) {
-                // Change the dialog text to register
-                const dialogTitle = document.querySelector("#dialog-title");
-                dialogTitle.textContent = "Register Successful!";
-                const dialogDetails = document.querySelector('#dialog-details');
-                dialogDetails.textContent = "Welcome to Milly! You have successfully registered!.";
-
-                // Make sure the modal is hidden.
-                modal.style.opacity = '0';
-                modalContainer.style.top = '-100%';
-
-                //Delay it to make sure the content is load then only perform animation
-                setTimeout(() => {
-                    modal.style.transition = 'opacity 0.5s ease';
-                    modalContainer.style.transition = 'top 0.8s ease, transform 0.8s ease';
-                    modal.style.opacity = '1';
-                    modalContainer.style.top = '50%';
-                    modalContainer.style.transform = 'translate(-50%, -50%)';
-                }, 100);
-
-                // Prevent scrolling when modal is open
-                document.body.style.overflow = 'hidden';
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching the Success HTML:', error);
+            Animation1('.full-screen-wrapper', '.modal-container');
         });
 }

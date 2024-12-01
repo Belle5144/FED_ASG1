@@ -1,54 +1,54 @@
 //Handle phone navigation logic
-const hamburgerButton = document.getElementById('hamburger-button');
+const hamburgerButton = document.getElementById('hamburger-button');                // Slide menu into view
 const closeButton = document.getElementById('side-menu-close-button');
 const sideMenu = document.getElementById('phone-side-menu');
 
 hamburgerButton.addEventListener('click', () => {
-    sideMenu.style.left = '0'; // Slide menu into view
+    sideMenu.style.left = '0px';                                                    // Slide menu into view at the left
 });
 
 closeButton.addEventListener('click', () => {
-    sideMenu.style.left = '-250px'; // Hide menu
+    sideMenu.style.left = '-250px';                                                 // Hide menu back, outside left screen
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    //Check whether is login or not, hide the button
     const loginButton = document.querySelector('.login-button');
     const registerButton = document.querySelector('.Register-button');
     const phoneLoginButton = document.querySelector('.phone-login-button');
     const phoneRegisterButton = document.querySelector('.phone-Register-button');
     
-    //Check auth status
-    if(localStorage.isLogin == null){
+   
+    if(localStorage.isLogin == null){                                               //check if login ornot
         loginButton.addEventListener('click', openLoginModal)
         registerButton.addEventListener('click', openSignUpModal)
         phoneLoginButton.addEventListener('click', openLoginModal)
         phoneRegisterButton.addEventListener('click', openSignUpModal)
-    } else {
-        loginButton.style.display = 'initial';
-        loginButton.textContent = 'Logout';
-        loginButton.addEventListener('click', logout)
-        phoneLoginButton.style.display = 'initial';
+    } 
+    else {
+        loginButton.style.display = 'initial';                                     //Ensure the button is visible
+        loginButton.textContent = 'Logout';                                        //Change the content to log out
+        loginButton.addEventListener('click', logout)                              //Make it clickable
+        
+        phoneLoginButton.style.display = 'initial';                                //In mobile layout
         phoneLoginButton.textContent = 'Logout';
         phoneLoginButton.addEventListener('click', logout)
-        registerButton.style.display = 'none';
+        
+        registerButton.style.display = 'none';                                     //Remove register button
         phoneRegisterButton.style.display = 'none';
-        if(localStorage.loginUser != null){
-            //Show the name
-            const userDisplay = document.createElement('h1');
-            userDisplay.style.marginLeft = '10px'
-            userDisplay.style.display = 'inline-block';
-            userDisplay.style.fontSize = '14px';
-            userDisplay.style.color = 'white';
-            userDisplay.style.backgroundColor = '#53589A';
-            userDisplay.style.padding = '15px';
-            userDisplay.style.borderRadius = '50%';
-            userDisplay.style.lineHeight = '25px';
-            userDisplay.textContent = localStorage.loginUser || 'Guest'; // Show the current user or 'Guest' if not logged in
-            const lastDiv = document.querySelector(".navigation-container div:last-of-type");
-            console.log(lastDiv);
-            lastDiv.appendChild(userDisplay);
-        }
+
+        const userDisplay = document.createElement('h1');
+        userDisplay.style.marginLeft = '10px'
+        userDisplay.style.display = 'inline-block';
+        userDisplay.style.fontSize = '14px';
+        userDisplay.style.color = 'white';
+        userDisplay.style.backgroundColor = '#53589A';
+        userDisplay.style.padding = '15px';
+        userDisplay.style.borderRadius = '50%';
+        userDisplay.style.lineHeight = '25px';
+        userDisplay.textContent = localStorage.loginUser ;                               // Show the current username
+        const lastDiv = document.querySelector(".navigation-container div:last-of-type");//Last div child using css selector
+        lastDiv.appendChild(userDisplay);
+        
     }
 })
 
@@ -58,43 +58,19 @@ function openLoginModal(){
         .then(html => {
             document.getElementById('modal-placeholder').innerHTML = html;
 
-            //Dynamic load the javascript file to support modal function
             const script = document.createElement('script');
-            script.src = 'modal.js';  // Path to your external JS file
+            script.src = 'modal.js';  
             script.onload = () => {
                 console.log('Modal JS loaded');
             };
-            document.body.appendChild(script); // Append the script to the body
+            document.body.appendChild(script); 
             const script2 = document.createElement('script');
-            script2.src = 'login.js'; // Path to the second script
+            script2.src = 'login.js'; 
             script2.onload = () => {
                 console.log('Login JS loaded');
             }
             document.body.appendChild(script2);
-            
-            // Get the modal and modal container elements
-            const modal = document.querySelector('.full-screen-wrapper');
-            const modalContainer = document.querySelector('.modal-container');
-            if (modal && modalContainer) {
-                // Make sure the modal is hidden.
-                modal.style.opacity = '0'; 
-                modalContainer.style.top = '-100%'; 
-
-                //Delay it to make sure the content is load then only perform animation
-                setTimeout(() => {
-                    modal.style.transition = 'opacity 0.5s ease';
-                    modalContainer.style.transition = 'top 0.8s ease, transform 0.8s ease';
-                    modal.style.opacity = '1';
-                    modalContainer.style.top = '50%';  
-                    modalContainer.style.transform = 'translate(-50%, -50%)'; 
-                }, 100); 
-
-                // Prevent scrolling when modal is open
-                document.body.style.overflow = 'hidden';
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching the Login HTML:', error);
+            Animation1('.full-screen-wrapper', '.modal-container');
         });
 }
 
@@ -104,43 +80,20 @@ function openSignUpModal(){
         .then(html => {
             document.getElementById('modal-placeholder').innerHTML = html;
 
-            //Dynamic load the javascript file to support modal function
             const script = document.createElement('script');
-            script.src = 'modal.js';  // Path to your external JS file
+            script.src = 'modal.js'; 
             script.onload = () => {
                 console.log('Modal JS loaded');
             };
 
-            document.body.appendChild(script); // Append the script to the body
+            document.body.appendChild(script); 
             const script2 = document.createElement('script');
-            script2.src = 'sign_up.js'; // Path to the second script
+            script2.src = 'sign_up.js';
             script2.onload = () => {
                 console.log('Sign up JS loaded');
             }
             document.body.appendChild(script2);
-            // Get the modal and modal container elements
-            const modal = document.querySelector('.full-screen-wrapper');
-            const modalContainer = document.querySelector('.modal-container');
-            if (modal && modalContainer) {
-                // Make sure the modal is hidden.
-                modal.style.opacity = '0';
-                modalContainer.style.top = '-100%';
-
-                //Delay it to make sure the content is load then only perform animation
-                setTimeout(() => {
-                    modal.style.transition = 'opacity 0.5s ease';
-                    modalContainer.style.transition = 'top 0.8s ease, transform 0.8s ease';
-                    modal.style.opacity = '1';
-                    modalContainer.style.top = '50%';
-                    modalContainer.style.transform = 'translate(-50%, -50%)';
-                }, 100);
-
-                // Prevent scrolling when modal is open
-                document.body.style.overflow = 'hidden';
-            }
-        })
-        .catch(error => {
-            console.error('Error fetching the Sign up HTML:', error);
+            Animation1('.full-screen-wrapper', '.modal-container');
         });
 }
 
