@@ -24,10 +24,9 @@ User Stories
 Hence, I created a wireframe to provide an overview of how my website will appear in both mobile and desktop layouts. This wireframe showcases the key design elements, including navigation, product listings, detailed pages and interactive features, ensuring a seamless user experience across different devices.
 figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_BelleChongQingXi_Assg1_wireframe?node-id=0-1&t=GY7OdMVuqz50yfgC-1
 
-
-## Colour Scheme
-- **Soft Beige:** Background color for the body and Register button, providing a soft, inviting base.
-- **Soft Brownish Pink:** Search bar background, login button background, placeholder text in input fields, and text color of the Register button, adding warmth and highlighting interactivity.
+## Features
+Existing Features
+<li **Soft Brownish Pink:** Search bar background, login button background, placeholder text in input fields, and text color of the Register button, adding warmth and highlighting interactivity. li/>
 - **Dark Charcoal Grey:** Used for signature text, offering contrast and an elegant branding touch.
 
 ---
