@@ -62,52 +62,23 @@ figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_Be
 - LocalStorage API
     - Used for storing user login and registration data persistently to simulate session management.
 
-## Website Functions
-
-### 1. Product List (Home > Products)
-**Purpose:**
-- Display all available products in an organized, user-friendly manner.
-- Provide the latest store updates and contact information.
-
-**Features:**
-- Grid layout with clear product thumbnails (Image, Name, Price).
-- Display upcoming products and store information.
-
----
-
-### 2. Product Details
-**Purpose:**
-- Provide detailed product views and suggest related products.
-
-**Features:**
-- Options for selecting product size/color.
-- Interactive buttons: “Add to cart” and “Buy now.”
-- Grid layout for related product thumbnails.
-
----
-
-### 3. Log In/Sign Up
-**Purpose:**
-- Remember user preferences, past purchases, and history.
-
-**Features:**
-- Input boxes for user details.
-- Social login options (e.g., Google, Apple ID).
-
----
-
-### 4. Search Bar
-**Purpose:**
-- Quickly find specific products and improve usability.
-
-**Features:**
-- Placeholder text within a functional search bar.
-
----
-
-## Links
-- **Figma Wireframe:** [View on Figma](https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_BelleChongQingXi_Assg1_wireframe?node-id=0-1&t=GyZTx018YbgzGwmT-1)
-- **GitHub Repository:** [View on GitHub](https://github.com/Belle5144/FED_ASG1.git)
+## Testing
+### 1. Login Button Testing Scenarios
+- Test 1: Empty Fields
+Steps: Open the login modal and click the "Login" button without entering any information.
+Expected Result: No action occurs, as there is no explicit error message for empty fields in the current implementation.
+- Test 2: Invalid Email Format
+Steps: Enter an invalid email format (e.g., user@com) in the email field and click the "Login" button.
+Expected Result: An alert appears with the message: "Invalid email address!" indicating the email format does not match the expected pattern.
+- Test 3: Non-Existent Account
+Steps: Enter a valid email format (e.g., user@example.com) that is not registered in localStorage and a random password. Click the "Login" button.
+Expected Result: An alert appears with the message: "Account does not exist!" indicating the email is not registered.
+- Test 4: Invalid Password
+Steps: Enter a registered email in the email field and an incorrect password in the password field. Click the "Login" button.
+Expected Result: An alert appears with the message: "Invalid Password!" indicating the entered password does not match the stored password for the email.
+- Test 5: Valid Login
+Steps: Enter a registered email and the correct password. Click the "Login" button.
+Expected Result: The login is successful. A modal with a success message is displayed, and the user is redirected to the homepage or another designated page.
 
 ---
 
