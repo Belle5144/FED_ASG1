@@ -3,21 +3,9 @@
 ---
 
 ## Design Ideas
+My project is a vibrant e-commerce website designed to deliver a seamless shopping experience for families. The website is warm and inviting designed to cater to parents looking for high-quality playful products for their children. It features an intuitive interface with clear navigation allowing users to easily explore products, view details and complete their purchases effortlessly.
 
-### External User Goals
-- **Intuitive Interface:** Able to find and buy the products they want through an intuitive and user-friendly interface.
-- **Convenience:** Browse products with clear details and minimal effort to search for specific items.
-- **Stay Informed:** Get updates about discounts, new arrivals, and bestseller items.
-- **Smooth Process:** Experience a seamless process from login/signup to product selection and secure checkout.
-
----
-
-### Owner’s Goals
-- **Boost Sales:** Increase revenue by displaying products in an organized and appealing manner to enhance sales.
-- **Good User Experience:** Minimize cart abandonment and maximize sales by ensuring an easy-to-use webpage.
-- **Customer Satisfaction:** Deliver a visually appealing and easy-to-navigate website with a soothing color palette for a delightful shopping experience.
-
----
+Key highlights of the website include an organized homepage showing featured and upcoming products,  product list page providing an overview of all available items, while a detailed product page with options for size and color selection and a smooth interactive login and registration system. The website ensures a user-friendly experience with responsive design making it accessible across devices.
 
 ## Design Theme
 
