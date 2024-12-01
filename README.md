@@ -102,12 +102,6 @@ figma link: https://www.figma.com/design/KYDULowpLwq5AzvUoLii7z/FED_S10268034_Be
   - Steps: Enter a valid, unregistered email and a valid password. Click the "Sign Up" button.
   - Expected Result: The registration is successful. A modal with a success message is displayed, and the user's login status is updated in localStorage
 
-
-
-
-
-
-
-
 ## Acknowledgements
-- Inspired by: [Miffy Shop](https://miffyshop.co.uk/)
+- All text content, product descriptions, and media (such as images and design inspiration) used in this project are sourced from the official Miffy Shop. 
+- https://miffyshop.co.uk/
